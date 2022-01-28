@@ -22,3 +22,9 @@ h1 {
 p {
   color: black;
 }
+
+.ans {
+  border: 1px solid red;
+  line-height: 2;
+  padding: 10px;
+}
