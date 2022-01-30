@@ -1,7 +1,10 @@
+"use strict";
+
 // gulpパッケージインストール
 const gulp = require('gulp');
 const pug = require('gulp-pug');
-const sass = require('gulp-sass')(require('sass'));
+// const sass = require('gulp-sass')(require('sass'));//LibSass
+const sass = require('gulp-dart-sass');//DartSass
 const autoprefixer =require('gulp-autoprefixer');
 const cssmin = require('gulp-cssmin');
 const uglify = require('gulp-uglify');

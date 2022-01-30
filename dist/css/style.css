@@ -1,30 +1,3 @@
-#content {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#content p, #content div {
-  font-size: 6.01em;
-}
-#content p a, #content div a {
-  font-weight: bold;
-  color: #996dc9;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-p {
-  color: black;
-}
-
-.ans {
-  border: 1px solid red;
-  line-height: 2;
-  padding: 10px;
+.btn {
+  background-color: skyblue;
 }
