@@ -51,6 +51,17 @@ textarea {
   white-space: revert;
 }
 
+/* Breakpoints
+================================================ */
 .btn {
   background-color: skyblue;
+}
+
+.test {
+  color: blue;
+}
+@media screen and (max-width: 767px) {
+  .test {
+    color: yellow;
+  }
 }

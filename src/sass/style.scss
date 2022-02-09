@@ -5,5 +5,13 @@
 //インポート
 @import 'reset';
 @import 'variables';
+@import 'mixin';
 @import "main";
+
+.test {
+    color: blue;
+    @include mq(sp) {
+        color: yellow;
+    }
+}
 
