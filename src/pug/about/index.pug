@@ -1,17 +1,18 @@
-extends ../_layout
+extends ../include/_layout
 block var
   - metas = {}
   - metas.title = 'title'
-  - metas.url = 'url'
+  - metas.url = '/about/'
   - metas.image = 'image'
   - metas.site_name = 'site_name'
   - metas.description = 'description'
 block append meta
   +meta(metas)
-  include ../_inc_meta_facebook
+  include ../include/_inc_meta_facebook
   +inc_meta_facebook(metas)
 block title
   title こんにちは
 block body
+  a(href= metas.url) 
     
     
