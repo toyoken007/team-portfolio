@@ -11,8 +11,9 @@ gulp 4.0.2
 npm i
 ## ソースを一度ビルドする
 npm run dev
-npm run build
+
 ## 開発環境起動（画像など追加した場合再度以下コマンドを打つ）
+npm run build
 
 ## ターミナル停止
 control + c
