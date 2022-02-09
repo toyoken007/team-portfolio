@@ -3,7 +3,7 @@ block var
   - metas = {}
   - metas.title = 'title'
   - metas.url = '/'
-  - metas.imgpath = './image/'
+  - metas.imgpath = './images/'
   - metas.site_name = 'site_name'
   - metas.description = 'description'
   - metas.keywords = 'keywords'
@@ -51,4 +51,13 @@ block body
             .content-inner
               p.title-name #{val.cat}
               p.title-content #{val.title}
+
+    .sec_inner
+      .slider
+        div
+          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
+        div
+          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
+        div
+          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
     
