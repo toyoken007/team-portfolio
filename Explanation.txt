@@ -1,0 +1,39 @@
+取り扱い書
+
+Pug
+ ☆
+ ☆リスト作成はJSON記法が使える
+    ul.list-news
+      -
+        const newsData = [
+          {
+            "img":"3.jpg",
+            "date":"2020/05/01",
+            "cat":"行事",
+            "title":"新人研修を行いました",
+            "link":"news3.html"
+          },
+          {
+            "img":"2.png",
+            "date":"2020/02/01",
+            "cat":"お知らせ",
+            "title":"Webサイトをリニューアルしました",
+            "link":"news2.html"
+          },
+          {
+            "img":"1.jpg",
+            "date":"2019/12/20",
+            "cat":"お知らせ",
+            "title":"年末年始の営業のお知らせ",
+            "link":"news1.html"
+          },
+        ]
+      //繰り返し処理
+      each val,i in newsData
+        li.c-news_item
+          a(href= "" + val.link)
+            .news-items-wrap
+              img(src="" + val.img, alt=val.title, srcset="")
+            .content-inner
+              p.title-name #{val.cat}
+              p.title-content #{val.title}
