@@ -29,7 +29,7 @@ Pug
           },
         ]
       //繰り返し処理
-      each val,i in newsData
+      each val in newsData
         li.c-news_item
           a(href= "" + val.link)
             .news-items-wrap
@@ -37,3 +37,66 @@ Pug
             .content-inner
               p.title-name #{val.cat}
               p.title-content #{val.title}
+
+
+
+//ヘッダーメニュー　子階層がある場合
+-
+    var headerMenu = [
+      {
+        pageLink: '',
+        pageName: 'ホーム'
+      },
+      {
+        pageLink: 'about',
+        pageName: '会社概要',
+        childMenu: [
+          {
+            pageLink: 'philosophy.html',
+            pageName: '企業理念'
+          },
+          {
+            pageLink: 'message.html',
+            pageName: 'トップメッセージ'
+          },
+          {
+            pageLink: 'history.html',
+            pageName: '沿革'
+          }
+        ]
+      },
+      {
+        pageLink: 'recruit',
+        pageName: '採用情報',
+        childMenu: [
+          {
+            pageLink: 'message.html',
+            pageName: 'メッセージ'
+          },
+          {
+            pageLink: 'person.html',
+            pageName: '社員紹介'
+          },
+          {
+            pageLink: 'guideline.html',
+            pageName: '募集要項'
+          }
+        ]
+      },
+      {
+        pageLink: 'news',
+        pageName: 'お知らせ'
+      },
+    ];
+  nav.nav
+    ul.list-menu
+      - for (var i = 0; i < headerMenu.length; i++)
+        li
+          a(href=headerMenu[i].pageLink + '/')
+            | #{headerMenu[i].pageName}
+          if headerMenu[i].childMenu != null
+            ul.list-menu__child
+              - for (var j = 0; j < headerMenu[i].childMenu.length; j++)
+                li
+                  a(href=headerMenu[i].pageLink + '/' + headerMenu[i].childMenu[j].pageLink)
+                    | #{headerMenu[i].childMenu[j].pageName}
