@@ -28,7 +28,7 @@ p,h1,h2,h3,h4,h5,h6 {
 #root,#__next {
     isolation:isolate
 }
-ol,ul {
+ol,ul,li {
     list-style:none
 }
 img {
@@ -39,4 +39,8 @@ table {
 }
 textarea {
     white-space:revert
+}
+a {
+    text-decoration: none;
+    
 }
