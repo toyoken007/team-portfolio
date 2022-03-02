@@ -3,7 +3,7 @@ block var
   - metas = {}
   - metas.title = 'title'
   - metas.url = '/about/'
-  - metas.image = 'image'
+  - metas.imgpath = '../images/'
   - metas.site_name = 'site_name'
   - metas.description = 'description'
 block append meta
@@ -13,6 +13,16 @@ block append meta
 block title
   title こんにちは
 block body
-  a(href= metas.url) 
+  .about_list
+    a(href= metas.url) aaaaaaaaa
+
+  .sec_inner
+    .slider
+      div
+        img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
+      div
+        img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
+      div
+        img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
     
     

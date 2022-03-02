@@ -62,6 +62,10 @@ a {
   background-color: skyblue;
 }
 
+.about_list {
+  font-size: 100px;
+}
+
 .test {
   color: blue;
 }
