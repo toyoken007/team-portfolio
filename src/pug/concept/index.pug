@@ -1,0 +1,75 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = '/concept/'
+  - metas.imgpath = '../images/concept/'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+block append meta
+  +meta(metas)
+  include ../include/_inc_meta_facebook
+  +inc_meta_facebook(metas)
+block title
+  title こんにちは
+block body
+  .concept_page
+    .concept_wrap 
+      .concept_h1
+        h1 Concept
+      .concept_image 
+        img(src=metas.imgpath + "cut_image.jpg", alt="カットイメージ画像")
+
+    .concept_box 
+      .concept_box_img 
+        img(src=metas.imgpath + "comcept_family.jpg", alt="家族イメージ画像")
+      .concept_box_comment 
+        .concept_h4
+          p あなたらしさに寄り添い、
+            br
+            |あなたの魅力を引き出す。
+        .concept_comment
+          p あなたらしさに寄り添い、一緒にあなたの魅力を引き出す。
+          p そんなあなたの為のスタイルを提供できるサロンを目指しています。
+          p そして、あらゆる世代のお客様の毎日がより輝くための場所として、これからもサービスや技術の向上に努めて参ります。
+    
+    .concept_features 
+      .features_title 
+        h3 Features
+      
+      .features_box 
+        .features_wrap
+          .features_icon1 
+            .hone
+              .features_img
+                img(src=metas.imgpath + "icon_kao.png", alt="顔イメージ画像")
+              .features_h4 
+                h4 再現性の高いスタイルをご提案
+              .features_comment 
+                p “美容室帰りだけ素敵”といったヘアーは作りません。服装、雰囲気、骨格にあわせた、ご自身でも再現性の高いスタイルをご提案し、お手入れ・スタイリング方法、スタイリング剤なども丁寧にレクチャーさせていただきます。
+          .features_icon1 
+            .hone
+              .features_img
+                img(src=metas.imgpath + "icon_hasami.png", alt="ハサミイメージ画像")
+              .features_h4 
+                h4 最新のトレンドと技術をご提供
+              .features_comment 
+                p 常に変化し続けるトレンド。それにあわせて求められる技術も同様に変化し続けていきます。MADAでは常にトレンドにあわせた最先端の技術をご提供するため、各講習やセミナーなど積極的に参加しスキルアップに取り組んでいます。
+          .features_icon1 
+            .hone
+              .features_img
+                img(src=metas.imgpath + "icon_after.png", alt="手イメージ画像")
+              .features_h4 
+                h4 アフターサービスも万全
+              .features_comment 
+                p カット、パーマ、カラー等お気に召さない場合がございましたら1週間以内にご連絡ください。
+                |責任を持って無料でお直しさせていただきます。
+          .features_icon1 
+            .hone
+              .features_img
+                img(src=metas.imgpath + "icon_soudan.png", alt="相談イメージ画像")
+              .features_h4 
+                h4 コミュニケーションを大事に
+              .features_comment 
+                p お客様が言葉にしづらいイメージや想いなどもしっかりとカタチにさせていただきます。何か気になる事などございましたら、どんな些細なことでも構いませんのでお気軽にご相談ください。
+

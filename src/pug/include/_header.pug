@@ -1,20 +1,23 @@
-header
+header.header
   //- ここからheder内容
-  h1 テストテストテスト
+  .header_wrap
+    .header_top
+      p Invincible Hair
+        span.header_red TOYO
 
-  include ./_json
-  nav.nav
-    ul.list-menu
-      - for (var i = 0; i < headerMenu.length; i++)
-        li
-          if headerMenu[i].pageLink != null
-            a(href=headerMenu[i].pageLink + '/')
-              | #{headerMenu[i].pageName}
-          else
-            |#{headerMenu[i].pageName}
-            if headerMenu[i].childMenu != null
-              ul.list-menu__child
-                - for (var j = 0; j < headerMenu[i].childMenu.length; j++)
-                  li
-                    a(href=headerMenu[i].pageLink + '/' + headerMenu[i].childMenu[j].pageLink)
-                      | #{headerMenu[i].childMenu[j].pageName}
+    include ./_json
+    nav.nav
+      ul.list-menu
+        - for (var i = 0; i < headerMenu.length; i++)
+          li
+            if headerMenu[i].pageLink != null
+              a(href=headerMenu[i].pageLink + '/')
+                | #{headerMenu[i].pageName}
+            else
+              |#{headerMenu[i].pageName}
+              if headerMenu[i].childMenu != null
+                ul.list-menu__child
+                  - for (var j = 0; j < headerMenu[i].childMenu.length; j++)
+                    li
+                      a(href=headerMenu[i].pageLink + '/' + headerMenu[i].childMenu[j].pageLink)
+                        | #{headerMenu[i].childMenu[j].pageName}

@@ -3,7 +3,7 @@ block var
   - metas = {}
   - metas.title = 'title'
   - metas.url = '/'
-  - metas.imgpath = './images/'
+  - metas.imgpath = '../images/top/'
   - metas.site_name = 'site_name'
   - metas.description = 'description'
   - metas.keywords = 'keywords'
@@ -14,52 +14,134 @@ block append meta
 block title
   title #{metas.title}
 block body
-  .btn#aabb
-    p aaa
-    a(href= metas.url )
+  .top
+    .josei_warp
+      .josei
+          img(src=metas.imgpath + "top_hair.jpg" alt="女性の画像")
+      .top_comment
+        h2 TOYO FOR
+          br
+          |ALWAYS
+          br
+          |BE YOURSELF.
 
-    ul.list-news
-      -
-        const newsData = [
-          {
-            "img":"3.jpg",
-            "date":"2020/05/01",
-            "cat":"行事",
-            "title":"新人研修を行いました",
-            "link":"news3.html"
-          },
-          {
-            "img":"2.png",
-            "date":"2020/02/01",
-            "cat":"お知らせ",
-            "title":"Webサイトをリニューアルしました",
-            "link":"news2.html"
-          },
-          {
-            "img":"1.jpg",
-            "date":"2019/12/20",
-            "cat":"お知らせ",
-            "title":"年末年始の営業のお知らせ",
-            "link":"news1.html"
-          },
-        ]
-      each val,i in newsData
-        li.c-news_item
-          a(href= metas.url + val.link)
-            .news-items-wrap
-              img(src=metas.imgpath + val.img, alt=val.title, srcset="")
-            .content-inner
-              p.title-name #{val.cat}
-              p.title-content #{val.title}
+    .news_warp
+      .news 
+        h4 News
+        ul.news_list 
+          li
+            p.days 2202.01.01
+            p.news_comment ２０２２年もよろしくお願いします。
+      .news_link
+        p: a(href="") View more
 
-    .sec_inner
-      .slider
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-        div
-          img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
+    .concept_wrap
+      h3.title Concept
+
+      .concept_box
+        .moji.hogehoge
+          .concept_comment
+            p あなたらしさに寄り添い
+              br
+              |あなたの魅力を引き出す。
+            .concept_link
+              p: a(href="") View more
+        .images.hogehoge
+          img(src=metas.imgpath + "cut_image.jpg", alt="カットイメージ画像")
     
+      .menu_box
+        .moji.hogehoge
+          .concept_comment
+            h4 Menu
+            p あなたに合わせたメニューで、
+              br
+              |毎日が輝くようなスタイル創りを。
+            .concept_link
+              p: a(href="") View more
+        .images.hogehoge
+          img(src=metas.imgpath + "hair_room.jpg", alt="カットイメージ画像")
+
+    .gallery_wrap 
+      .gallery_title 
+        h3.title Gallery 
+      .gallery_box 
+        ul.gallery_images1
+          li
+            img(src=metas.imgpath + "man1.jpg", alt="男性1画像")
+          li
+            img(src=metas.imgpath + "man2.jpg", alt="男性2画像")
+          li
+            img(src=metas.imgpath + "man3.jpg", alt="男性3画像")
+          li
+            img(src=metas.imgpath + "man4.jpg", alt="男性4画像")
+        ul.gallery_images2
+          li
+            img(src=metas.imgpath + "woman1.jpg", alt="女性1画像")
+          li
+            img(src=metas.imgpath + "woman2.jpg", alt="女性2画像")
+          li
+            img(src=metas.imgpath + "woman3.jpg", alt="女性3画像")
+          li
+            img(src=metas.imgpath + "woman4.jpg", alt="女性4画像")
+        .gallery_link
+              p: a(href="") View more
+
+    .about_wrap
+      .about_comment.hogehoge
+        .about_comment_box
+        h4 About 
+        p.about_title Invincible Hair 
+          span.about_red TOYO
+        p.about_name インヴィンシブル ヘアートヨ
+        br
+        p.about_address 〒868-0008
+        |熊本県人吉市中青井町
+        .about_link
+          .about_link1 
+            p: a(href="") View more
+          .about_link2 
+            p: a(href="") Google Map
+      .about_map.hogehoge
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.5585365310835!2d130.75153001450224!3d32.21612431968026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353f7174da299197%3A0x4fd91ab8c025d86f!2z5Lq65ZCJ6aeF!5e0!3m2!1sja!2sjp!4v1649048075618!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    .recruit_wrap 
+      .recruit_img 
+        img(src=metas.imgpath + "recruit.jpg", alt="散髪風景の画像")
+      .recruit_box
+        h4 Recruit 
+        p.recruit_title 「愛」 「真心」 「美」 「感動」を与える。
+        br
+        p.recruit_comment お客様に美と感動を与えるためには「愛」と「真心」が不可欠です。
+        p.recruit_comment 心を込めておもてなしすれば必ずお客様に伝わり、そしてあなたにとって必ず大切なお客様となります。
+        .recruit_link 
+          p: a(href="") View more
+
+    .blog_wrap
+      h4 blog
+      .blog_list
+        .blog_box
+          .blog_box1
+            img(src=metas.imgpath + "ikumou.jpg", alt="育毛剤の画像")
+          .blog_box2
+            p.blog_days 2020.10.07
+            a(href="") アジュバン育毛シリーズ　KASUI
+        .blog_box
+          .blog_box1
+            img(src=metas.imgpath + "tatemono.jpg", alt="建物の画像")
+          .blog_box2
+            p.blog_days 2020.05.07
+            p: a(href="") 本日より営業再開しました。
+        .blog_box
+          .blog_box1
+            img(src=metas.imgpath + "kaikei.jpg", alt="会計の画像")
+          .blog_box2
+            p.blog_days 2020.05.06
+            p: a(href="") 安心安全お会計
+        .blog_box
+          .blog_box1
+            img(src=metas.imgpath + "hatake.jpg", alt="畑の画像") 
+          .blog_box2
+            p.blog_days 2020.05.05
+            p: a(href="") 畑ほぼ完成しました。
+      .blog_link
+        p: a(href="") View more

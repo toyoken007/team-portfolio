@@ -1,6 +1,8 @@
 //スライダー
 @import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css);
+//google fonts
+@import url(https://fonts.googleapis.com/css2?family=Sriracha&display=swap);
 
 //リセット
 @import 'reset';
@@ -8,10 +10,18 @@
 @import 'variables';
 //breakpoint
 @import 'mixin';
-//main
-@import "main";
+//header
+@import "header";
+//top
+@import "top";
 //about
 @import "about";
+//concept
+@import "concept";
+//menu
+@import "menu";
+//footer
+@import "footer";
 
 .test {
     color: blue;

@@ -1,0 +1,506 @@
+.top {
+    margin-top: 80px;
+ 
+  
+  .josei_warp {
+    display: flex;
+    align-items: center;
+    .josei {
+      width: 85%;
+      max-width: 1035px;
+      // margin-top: -75px;
+      img {
+        width: 100%;
+      }
+    }
+    .top_comment {
+      h2 {
+        // width: 300px;
+        font-size: 35px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin-left: -230px;
+        line-height: 2;
+        letter-spacing : 8px;
+        //margin-top: 100px;
+        //携帯サイズ
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  
+  .news_warp {
+    display: flex;
+    // margin-top: 130px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 130px auto 0;
+    
+    .news {
+      display: flex;
+      justify-content: space-between;
+      // margin-left: 130px;
+      h4 {
+        font-size: 23px;
+        letter-spacing : 4px;
+        border-right: 1px solid;
+        padding-right: 25px;
+      }
+      .news_list {
+        margin-left: 30px;
+        // text-align: center;
+        display: flex;
+        align-items: center;
+        li {
+          display: flex;
+          .news_comment {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+    .news_link {
+      // margin-right: 180px;
+      display: flex;
+      align-items: center;
+      width: 110px;
+      border-bottom: 1px solid ;
+      p {
+        font-size: 15px;
+        position: relative;
+        transition: all 1s;
+        width: 100%;
+        a {
+          width: 100%;
+          text-decoration: none;
+          &::after {
+            // width: 100px;
+            // white-space:pre-wrap;
+            content: ">";
+            position: absolute;
+            top: 0;
+            right: 0;
+            // margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+  
+  .concept_wrap {
+    width: 100%;
+    margin-top: 100px;
+    h3 {
+      text-align: center;
+      font-size: 30px;
+    }
+    .concept_box {
+      display: flex;
+      // margin-top: 50px;
+      width: 100%;
+      max-width: 1140px;
+      margin: 50px auto;
+      justify-content: space-between;
+      align-items: center;
+      .hogehoge {
+        width: 50%;
+      }
+      .concept_comment {
+        
+        p {
+          font-weight: bold;
+          line-height: 2;
+          font-size: 20px;
+          font-family: "游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+          // position: relative;
+          // transition: all 1s;
+          // width: 100%;
+          a {
+            font-weight: 500;
+            font-family: "游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+            width: 100%;
+            text-decoration: none;
+            // &::after {
+            //   content: ">";
+            //   position: absolute;
+            //   top: 0;
+            //   right: 0;
+            }
+          }
+        }
+        .concept_link {
+          margin-top: 70px;
+          width: 100%;
+          max-width: 120px;
+          padding: 8px;
+          border: 1px solid;
+          p {
+            font-size: 15px;
+            position: relative;
+            transition: all 1s;
+            width: 100%;
+            a {
+              width: 100%;
+              text-decoration: none;
+              &::after {
+                content: ">";
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+          }
+        }
+      }
+    }
+    .menu_box {
+      display: flex;
+      // margin-top: 50px;
+      width: 100%;
+      // max-width: 1140px;
+      margin: 150px auto;
+      justify-content: space-between;
+      align-items: center; 
+      position: relative;
+      .hogehoge {
+        width: 60%;
+      }
+      .moji {
+        display: flex;
+        align-self: stretch;
+        align-items: center; //縦ー！
+        background: #f3f3f3;
+        justify-content: center; //横
+        order: 2;
+        position: absolute;
+        top: 100px;
+        bottom: -100px;
+        right: 0;
+        z-index: 1;
+      }
+      .images {
+        position: relative;
+        z-index: 2;
+        order: 1;
+      }
+      .concept_comment {
+        margin-left: 150px;
+        h4 {
+          font-size: 28px;
+          margin-bottom: 30px;
+        }
+        p {
+          font-weight: bold;
+          line-height: 2;
+          font-size: 20px;
+          font-family: "游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+          // position: relative;
+          // transition: all 1s;
+          // width: 100%;
+          a {
+            font-weight: 500;
+            font-family: "游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+            width: 100%;
+            text-decoration: none;
+            // &::after {
+            //   content: ">";
+            //   position: absolute;
+            //   top: 0;
+            //   right: 0;
+            }
+          }
+        }
+        .concept_link {
+          margin-top: 70px;
+          width: 100%;
+          max-width: 120px;
+          padding: 8px;
+          border: 1px solid;
+          p {
+            font-size: 15px;
+            position: relative;
+            transition: all 1s;
+            width: 100%;
+            a {
+              width: 100%;
+              text-decoration: none;
+              &::after {
+                content: ">";
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .gallery_wrap {
+    .gallery_title {
+      // margin-top: 80px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .gallery_box {
+      margin-top: 80px;
+      .gallery_images1 {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 25px auto;
+        li {
+          max-width: 250px;
+          width: 100%;
+        }
+      }
+    }
+    .gallery_images2 {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 25px auto;
+        li {
+          max-width: 250px;
+          width: 100%;
+        }
+    }
+    .gallery_link {
+      margin: 70px auto;
+      width: 100%;
+      max-width: 120px;
+      padding: 8px;
+      border: 1px solid;
+      p {
+        font-size: 15px;
+        position: relative;
+        transition: all 1s;
+        width: 100%;
+        a {
+          width: 100%;
+          text-decoration: none;
+          &::after {
+            content: ">";
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+    
+    
+  }
+  
+  .about_wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .about_comment {
+      width: 52%;
+      background-color: rgb(235, 235, 235);
+      // position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 100px;
+      h4 {
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      p.about_title {
+        font-size: 20px;
+        .about_red {
+          color: red;
+          margin-left: 20px;
+        }
+      }
+      .about_name {
+        font-size: 15px;
+      }
+  
+      .about_link {
+        display: flex;
+        margin-top: -50px;
+        .about_link1 {
+          margin-top: 70px;
+          width: 100%;
+          max-width: 120px;
+          padding: 8px;
+          border: 1px solid;
+          p {
+            font-size: 15px;
+            position: relative;
+            transition: all 1s;
+            width: 100%;
+            a {
+              width: 100%;
+              text-decoration: none;
+              &::after {
+                content: ">";
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+      
+        .about_link2 {
+          margin-top: 70px;
+          width: 100%;
+          max-width: 120px;
+          padding: 8px;
+          border: 1px solid;
+          margin-left: 20px;
+          p {
+            font-size: 15px;
+            position: relative;
+            transition: all 1s;
+            width: 100%;
+            a {
+              width: 100%;
+              text-decoration: none;
+              &::after {
+                content: ">";
+                position: absolute;
+                top: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+    .about_map {
+      width: 53%;
+      margin-top: 50px;
+      margin-bottom: -50px;
+      // position: absolute;
+      right: 0;
+      margin-left: -100px;
+      z-index: 1;
+      iframe {
+        width: 100%;
+      } 
+    }
+  }
+  
+  .recruit_wrap {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    .recruit_img {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        opacity: 0.3;
+      }
+    }
+    .recruit_box {
+      width: 100%;
+      height: 524px;
+      position: absolute;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      h4 {
+        margin-bottom: 50px;
+        font-size: 25px;
+      }
+      .recruit_title {
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .recruit_comment {
+        font-size: 15px;
+      }
+      .recruit_link {
+        margin-top: 70px;
+        width: 100%;
+        max-width: 120px;
+        padding: 8px;
+        border: 1px solid;
+        p {
+          font-size: 15px;
+          position: relative;
+          transition: all 1s;
+          width: 100%;
+          a {
+            width: 100%;
+            text-decoration: none;
+            &::after {
+              content: ">";
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .blog_wrap {
+    h4 {
+      text-align: center;
+      font-size: 30px;
+      margin: 70px 0;
+    }
+    .blog_list {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      margin: 25px auto;
+      .blog_box {
+        .blog_box1 {
+          max-width: 250px;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        .blog_box2 {
+          margin: 20px 0;
+          p {
+            margin: 10px 0;
+          }
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .blog_link {
+      margin: 70px auto;
+      width: 100%;
+      max-width: 120px;
+      padding: 8px;
+      border: 1px solid;
+      p {
+        font-size: 15px;
+        position: relative;
+        transition: all 1s;
+        width: 100%;
+        a {
+          width: 100%;
+          text-decoration: none;
+          &::after {
+            content: ">";
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

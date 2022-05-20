@@ -1,0 +1,16 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = '/menu/'
+  - metas.imgpath = '../images/'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+block append meta
+  +meta(metas)
+  include ../include/_inc_meta_facebook
+  +inc_meta_facebook(metas)
+block title
+  title ccc
+block body
+  .menu_page
