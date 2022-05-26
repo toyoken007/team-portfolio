@@ -22,7 +22,7 @@ body {
 
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 input, button, textarea, select {
@@ -43,7 +43,7 @@ ol, ul, li {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 table {
@@ -330,6 +330,8 @@ a {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  height: 500px;
+  overflow: hidden;
 }
 .top .concept_wrap .menu_box .concept_comment {
   margin-left: 150px;
@@ -385,15 +387,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1080px;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 25px auto;
 }
 .top .gallery_wrap .gallery_box .gallery_images1 li {
-  max-width: 250px;
-  width: 100%;
+  width: calc((100% - 80px) / 4);
+  margin-bottom: 20px;
 }
 .top .gallery_wrap .gallery_images2 {
   display: -webkit-box;
