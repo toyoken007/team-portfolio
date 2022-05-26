@@ -251,12 +251,15 @@
       margin-top: 80px;
       .gallery_images1 {
         display: flex;
-        width: 80%;
+        flex-wrap: wrap;
+        max-width: 1080px;
+        width: 100%;
         justify-content: space-between;
         margin: 25px auto;
         li {
-          max-width: 250px;
-          width: 100%;
+          // max-width: 250px;
+          width: calc((100% - 80px) / 4);
+          margin-bottom: 20px;
         }
       }
     }
