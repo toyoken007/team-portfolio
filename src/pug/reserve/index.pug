@@ -1,0 +1,98 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = '/reserve/'
+  - metas.imgpath = '../images/'
+  - metas.site_name = 'ネット予約ページ'
+  - metas.description = 'description'
+block append meta
+  +meta(metas)
+  include ../include/_inc_meta_facebook
+  +inc_meta_facebook(metas)
+block title
+  title こんにちは
+block body
+  #reserve_body
+    p.header_txt Invincible Hair MADA【インヴィンシブル ヘアー マーダ】　ネット予約ページ
+
+    section#shop_wrap.shop_wrap
+      ul.detail_wrap 
+        li.shop_img
+          img(src="https://placehold.jp/150x150.png", alt="ダミー画像")
+        li.shop_detail
+          h1 Invincible Hair MADA【インヴィンシブル ヘアー マーダ】
+          small インヴィンシブルヘアーマーダ
+          .tags 即時予約OK
+          p.address 兵庫県姫路市市川橋通１－１－１ ２F
+            br
+            |東姫路駅徒歩８分/リオス向かい/市川橋ケーズ電気向かい(２号線沿い)
+
+    .notes
+      p ※即時予約は、予約完了時点で予約が確定します。そのままご来店ください。
+    
+    .step_list
+      ul
+        li.steps_item
+          span.icons
+          ul.list_txt.active_items
+            li.step_num STEP1
+            li クーポン・メニューを選ぶ
+        li.steps_item
+          span.icons
+          ul.list_txt
+            li.step_num STEP2
+            li 日時を指定する
+        li.steps_item
+          ul.list_txt
+            li.step_num STEP3
+            li お客様情報入力
+        li.steps_item
+          ul.list_txt
+            li.step_num STEP4
+            li 予約内容の確認
+        li.steps_item
+          ul.list_txt
+            li.finish_step 登録完了
+
+    section#shop_list_deta.shop_list_deta
+      ul.shop_card_list
+        li.card_lists
+          ul.list_inner
+            li.new 新規
+            li.inner_items
+             ul.items_section
+              li.section_head
+                ul.head_list
+                  li.list_tags
+                    p.tag カット
+                    p.tag トリートメント
+                  li.price ¥6,500
+              li.section_title
+                h3 【初めての方☆】カット+美髪トリートメント一律¥6,500
+              li.section_detail
+               ul.detail_datas
+                li.data_image
+                  img(src="https://placehold.jp/73x97.png", alt="")
+                li.data_txt
+                  p.txt_cap (アジュバンシャンプー・ブロー込)※ロング料金無し◆一人ひとりの髪のダメージレベルに合わせトリートメントを選定！ふんわり仕上げたい、サラッとまとめたいなど理想のスタイルを手に入れて♪
+                  .txt_conditions
+                    p.conditions_txt
+                      span 来店日条件：
+                      |指定なし
+                    p.conditions_txt
+                      span 対象スタイリスト：
+                      |全員
+                    p.conditions_txt
+                      span その他条件：
+                      |新規限定/他券併用不可
+            li.reserve
+              ul.reserve_inner
+                li.inner_coupon_btn
+                  a(href="") このクーポンで
+                    br
+                    |空席確認・予約する
+                li.inner_addition_btn
+                 a(href="") メニューを追加して予約
+    
+    
