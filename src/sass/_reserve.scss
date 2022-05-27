@@ -1,0 +1,168 @@
+#reserve_body {
+    line-height: 1;
+    p.header_txt {
+        background: #BFB4AB;
+        color: #fff;
+        text-align: center;
+        font-size: 10px;
+    }
+    section#shop_wrap.shop_wrap {
+        background: #F7F6EA;
+        max-width: 765px;
+        margin: 10px auto 20px;
+        padding: 10px;
+        ul.detail_wrap {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            li.shop_img {
+                width: 100px;
+            }
+        }
+        li.shop_detail {
+            margin-left: 10px;
+            h1 {
+                font-size: 18px;
+                color: #333;
+                margin-bottom: 5px;
+            }
+            small {
+                color: #666;
+                font-size: 10px;
+                margin-bottom: 5px;
+                display: block;
+            }
+            .tags {
+                display: inline-block;
+                border-radius: 4px;
+                font-size: 10px;
+                padding: 3px;
+                background-color: #FFFFFF;
+                border: solid 1px #988989;
+                color: #988989;
+            }
+            p.address {
+                color: #333;
+                font-size: 10px;
+                margin-top: 5px;
+                line-height: 1.5;
+            }
+        }
+    }
+    .notes {
+        font-size: 12px;
+        color: #FF0000;
+        max-width: 765px;
+        margin: 5px auto 15px;
+        padding: 0 5px 0;
+    }
+    .step_list {
+        max-width: 765px;
+        margin: 0 auto;
+        > ul {
+            border: 1px solid #CCCCCC;
+            border-radius: 4px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: table;
+            line-height: 1;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            li.steps_item {
+                display: flex;
+                padding: 5px;
+                align-items: center;
+                span.icons {
+                    background-image: url('https://placehold.jp/30x30.png');
+                    width: 30px;
+                    height: 30px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: block;
+                    margin-right: 5px;
+                }
+                ul.list_txt {
+                    color: #999;
+                    li {
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                    li.step_num {
+                        font-size: 10px;
+                    }
+                }
+                ul.active_items {
+                    color: #CC4466;
+                }
+                &:not(:nth-last-of-type(1)) {
+                    &::after {
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid;
+                        border-color:  transparent transparent #CBC4C4 #CBC4C4;
+                        transform: rotate(225deg);
+                        content: "";
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    // ショップカード
+    section#shop_list_deta.shop_list_deta {
+        margin-top: 10px;
+        ul.shop_card_list {
+            width: 765px;
+            margin: 0 auto;
+            li.card_lists {
+                // カード○枚目
+                ul.list_inner {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: stretch;
+                    > li {
+                        border: 1px solid #ccc;
+                    }
+                    li.new {
+                        writing-mode: vertical-rl;
+                        background: #D97791;
+                        color: #fff;
+                        text-align: center;
+                        padding: 0 6px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                    }
+                    li.inner_items {
+                        padding: 10px;
+                        ul.items_section {
+                            display: flex;
+                            flex-direction: column;
+                            li.section_head {
+                                ul.head_list {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    li.list_tags {
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 10px;
+                                        > p {
+                                            font-size: 10px;
+                                            color: white;
+                                            padding: 3px 10px;
+                                            background: #FF8A90;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
