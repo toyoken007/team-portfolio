@@ -2,5 +2,49 @@
 //     background-color: $main-font;
 // }
 .menu_page {
-  
+  .menu_wrap {
+    display: flex;
+    width: 100%;
+    .menu_h1 {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      h1 {
+        margin-top: 180px;
+        font-size: 30px;
+      }
+    }
+  }
+  .menu_image {
+    max-width: 970px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .menu_h2 {
+    margin: 160px auto 0;
+    width: 600px;
+  }
+
+  .menu_list {
+    width: 600px;
+    margin: 50px auto 0;
+    tr {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      border-bottom: 1px solid rgb(88, 88, 88);
+      &:nth-of-type(1) {
+        padding-top: 0;//だいたい使うのは nth-last-of-type nth-of-type nth-child
+      }
+      th {
+
+      }
+      td {
+
+      }
+    }
+  }
 }

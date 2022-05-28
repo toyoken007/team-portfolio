@@ -3,7 +3,7 @@ block var
   - metas = {}
   - metas.title = 'title'
   - metas.url = '/menu/'
-  - metas.imgpath = '../images/'
+  - metas.imgpath = '../images/menu/'
   - metas.site_name = 'site_name'
   - metas.description = 'description'
 block append meta
@@ -13,5 +13,29 @@ block append meta
 block title
   title Menu
 block body
-  .menu_page
-    p bbb
+  main.menu_page
+    .menu_wrap 
+      .menu_h1
+        h1 Menu
+      .menu_image 
+        img(src=metas.imgpath + "room.jpg", alt="カットイメージ画像")
+
+    .menu_h2
+      h2 Cut
+
+    table.menu_list 
+      tr 
+        th カット（シャンプー・ブロー込）
+        td ¥4,950
+      tr 
+        th メンズカット（シャンプー・ブロー込）
+        td ¥4,400
+      tr 
+        th スクールカット（中高生、シャンプー・ブロー込）
+        td ¥3,300
+      tr 
+        th 前髪カット
+        td ¥1,100
+      tr 
+        th キッズカット
+        td ¥2,200
