@@ -840,6 +840,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 #reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_head ul.head_list li.list_tags {
   display: -webkit-box;
@@ -857,6 +858,112 @@ a {
   color: white;
   padding: 3px 10px;
   background: #FF8A90;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_head ul.head_list li.price {
+  color: #C46;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_title h3 {
+  font-size: 14px;
+  color: #655;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail {
+  margin-top: 15px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail ul.detail_datas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  padding: 0 10px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail ul.detail_datas li.data_image {
+  min-width: 73px;
+  width: 73px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail ul.detail_datas li.data_txt {
+  padding-right: 20px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail ul.detail_datas li.data_txt p.txt_cap {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail ul.detail_datas li.data_txt .txt_conditions p:not(:nth-last-child(1)) {
+  margin-bottom: 10px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail ul.detail_datas li.data_txt .txt_conditions p.conditions_txt {
+  font-size: 11px;
+  color: #666;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.inner_items ul.items_section li.section_detail ul.detail_datas li.data_txt .txt_conditions p.conditions_txt span {
+  color: #C46;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.reserve {
+  background: #FDF7EF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.reserve ul.reserve_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.reserve ul.reserve_inner li:not(:nth-last-child(1)) {
+  margin-bottom: 10px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.reserve ul.reserve_inner li.inner_coupon_btn {
+  font-size: 13px;
+  text-align: center;
+  width: 150px;
+  background: #F95A6B;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF9BA2), color-stop(75%, #F95A6B), to(#F85164));
+  background: linear-gradient(to bottom, #FF9BA2 0%, #F95A6B 75%, #F85164 100%);
+  border: 1px solid #DA949B;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 1px 1px 3px #f9d8db, inset -1px -1px 3px #ffa6ae;
+          box-shadow: inset 1px 1px 3px #f9d8db, inset -1px -1px 3px #ffa6ae;
+  color: #FFFFFF !important;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.reserve ul.reserve_inner li.inner_coupon_btn a {
+  color: #fff;
+  line-height: 1.5;
+  font-weight: bold;
+  display: block;
+  padding: 5px 0;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.reserve ul.reserve_inner li.inner_addition_btn {
+  font-size: 13px;
+  text-align: center;
+  width: 150px;
+  background: #FDF5F6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#FAE5E7));
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FAE5E7 100%);
+  border: solid 1px #E5848E;
+  border-radius: 3px;
+}
+#reserve_body section#shop_list_deta.shop_list_deta ul.shop_card_list li.card_lists ul.list_inner li.reserve ul.reserve_inner li.inner_addition_btn a {
+  color: #fff;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #E53B4E;
+  font-size: 11px;
+  display: block;
+  padding: 5px 0;
 }
 
 .concept_page .concept_wrap {

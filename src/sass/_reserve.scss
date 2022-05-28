@@ -146,6 +146,7 @@
                                 ul.head_list {
                                     display: flex;
                                     justify-content: space-between;
+                                    margin-bottom: 20px;
                                     li.list_tags {
                                         display: flex;
                                         align-items: center;
@@ -157,6 +158,98 @@
                                             background: #FF8A90;
                                         }
                                     }
+                                    li.price {
+                                        color: #C46;
+                                    }
+                                }
+                            }
+                            li.section_title {
+                                h3 {
+                                    font-size: 14px;
+                                    color: #655;
+                                }
+                            }
+                            li.section_detail {
+                                margin-top: 15px;
+                                ul.detail_datas {
+                                    display: flex;
+                                    column-gap: 30px;
+                                    padding: 0 10px;
+                                    li.data_image {
+                                        min-width: 73px;
+                                        width: 73px;
+                                    }
+                                    li.data_txt {
+                                        padding-right: 20px;
+                                        p.txt_cap {
+                                            font-size: 11px;
+                                            color: #666;
+                                            margin-bottom: 20px;
+                                            line-height: 1.4;
+                                        }
+                                        .txt_conditions {
+                                            p:not(:nth-last-child(1)) {
+                                                margin-bottom: 10px;
+                                            }
+                                            p.conditions_txt {
+                                                font-size: 11px;
+                                                color: #666;
+                                                span {
+                                                    color: #C46;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    li.reserve {
+                        background: #FDF7EF;
+                        display: flex;
+                        align-items: center;
+                        ul.reserve_inner {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 0 10px;
+                            li:not(:nth-last-child(1)) {
+                                margin-bottom: 10px;
+                            }
+                            li.inner_coupon_btn {
+                                font-size: 13px;
+                                text-align: center;
+                                width: 150px;
+                                background: #F95A6B;
+                                background: linear-gradient(to bottom, #FF9BA2 0%,#F95A6B 75%,#F85164 100%);
+                                border: 1px solid #DA949B;
+                                border-radius: 4px;
+                                box-shadow: inset 1px 1px 3px #f9d8db, inset -1px -1px 3px #ffa6ae;
+                                color: #FFFFFF !important;
+                                a {
+                                    color: #fff;
+                                    line-height: 1.5;
+                                    font-weight: bold;
+                                    display: block;
+                                    padding: 5px 0;
+                                }
+                            }
+                            li.inner_addition_btn {
+                                font-size: 13px;
+                                text-align: center;
+                                width: 150px;
+                                background: #FDF5F6;
+                                background: linear-gradient(to bottom, #FFFFFF 0%,#FAE5E7 100%);
+                                border: solid 1px #E5848E;
+                                border-radius: 3px;
+                                a {
+                                    color: #fff;
+                                    line-height: 1.5;
+                                    font-weight: bold;
+                                    color: #E53B4E;
+                                    font-size: 11px;
+                                    display: block;
+                                    padding: 5px 0;
                                 }
                             }
                         }
