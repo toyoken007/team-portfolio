@@ -1,9 +1,9 @@
 window.onload = function(){
     let head = document.getElementsByClassName('header')[0].offsetHeight;
-    let reserve = document.getElementById('reserve_body');
+    let hp_main = document.getElementsByTagName('main')[0];
 
     console.log(location.pathname);
-    if( location.pathname === "/reserve/") {
-        reserve.style.marginTop = head + 'px';
-    }
+    // if( location.pathname === "/reserve/") {
+        hp_main.style.marginTop = head + 'px';
+    // }
 }
