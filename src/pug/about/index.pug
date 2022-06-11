@@ -3,7 +3,7 @@ block var
   - metas = {}
   - metas.title = 'title'
   - metas.url = '/about/'
-  - metas.imgpath = '../images/'
+  - metas.imgpath = '../images/about/'
   - metas.site_name = 'site_name'
   - metas.description = 'description'
 block append meta
@@ -11,18 +11,128 @@ block append meta
   include ../include/_inc_meta_facebook
   +inc_meta_facebook(metas)
 block title
-  title こんにちは
+  title About
 block body
-  .about_list
-    a(href= metas.url) aaaaaaaaa
+  main.about_page
+    .about_wrap 
+      .about_h1
+        h1 Menu
+      .about_image 
+        img(src="https://placehold.jp/964x369.png", alt="カットイメージ画像")
 
-  .sec_inner
-    .slider
-      div
-        img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-      div
-        img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-      div
-        img(src=metas.imgpath + "pc_facility-item03-100.jpg", alt="", srcset="")
-    
-    
+   
+    .stylist_wrap 
+      .stylist_h2 
+        h2 Stylist 
+      .stylist_men  
+        .stylist_img 
+          img(src="https://placehold.jp/334x433.png", alt="スタイリスト画像1")
+        .stylist_name 
+          p.p1 山田　太郎（仮名）
+          p.p2 Yamada  Tarou 
+        .stylist_comment 
+          p 一鋏入魂！カットマニアのボブ職人。
+          |上品かつ再現性の高いスタイルを実現いたします。髪のお悩み事など何でもお気軽にご相談ください。海外での美容経験もあり、英語での接客も可能です。皆様のご来店をお待ちしております。
+        .stylist_sns 
+          .sns
+            img(src="https://placehold.jp/21x21.png", alt="カットイメージ画像")
+          .sns 
+            img(src="https://placehold.jp/21x21.png", alt="カットイメージ画像")
+      .stylist_men 
+        .stylist_img 
+          img(src="https://placehold.jp/334x433.png", alt="スタイリスト画像1")
+        .stylist_name 
+          p.p1 熊本　文太（仮名）
+          p.p2 Kumamoto  Monta
+        .stylist_comment 
+        p 四季を通してワクワクするような髪とデザインをご提供し、お客様の居心地良さを1番に考えた接客を心がけています。
+        |続けてご来店いただけるような空間づくりも大切にしていますので、お気軽にご来店ください。    
+        .stylist_sns 
+          .sns1
+            img(src="https://placehold.jp/21x21.png", alt="カットイメージ画像")
+
+    .stylist_philosophy
+      .philosophy_box
+        .philosophy1 
+          .philosophy_h3 
+            h3 Philosophy
+          .philosophy_list 
+            h4 経営目標
+            ol
+              li より良い技術、サービスを提供し社会貢献を図る
+              li 人を尊重し、人間力を高める
+              li 社員の物心両面の幸福を追求する
+          .philosophy_list 
+            h4 スローガン
+            ol
+              li 行動力　アクション
+              li 使命感　ミッション
+              li 情熱　  パッション
+              li 知識・技術習得の強化
+        .philosophy2
+          .philosophy_list 
+            h4 経営方針
+            ol
+              li 顧客サービス
+              li 社会に貢献できる人材育成
+              li スタッフの生活の安定・豊かさ
+          .philosophy_list1
+            h4 コンセプト
+            h5 「基本思想・基本理念・基本発想」
+            p 私達は来ていただいたお客様すべての人に美と心の豊かさを提供します。
+
+    .stylist_outline
+      .outline_h2 
+        h2 Outline 
+      .outline_box
+        .salon 
+          .salon_h3 
+            h3 Salon 
+          table.salon_list 
+            tr 
+              th.salonlist_1 店名
+              td 
+                p Invincible Hair TOYO
+                |インヴィンシブル ヘアートヨ
+            tr 
+              th 代表
+              td 山田　次郎（仮名）
+            tr 
+              th TEL
+              td 070-000-0000
+            tr 
+              th.salonlist_1 住所
+              td 
+                p 〒000-0000
+                |熊本県人吉市
+            tr 
+              th 営業時間
+              td 9:30～19:30(※カラー等は受付18:30まで)
+            tr 
+              th 店休日
+              td 毎週月曜、第2,3火曜日
+            tr 
+              th 席数
+              td セット面3席
+            tr 
+              th 駐車業
+              td 4台
+            tr 
+              th クレジットカート
+              td 利用可
+        .company
+          .company_h3
+            h3 Company
+          table.company_list 
+            tr 
+              th 会社名
+              td 有限会社くまなみ
+            tr 
+              th 代表取締役
+              td 山田　三郎（仮名）
+            tr 
+              th 設立
+              td 昭和53年1月1日
+            tr 
+              th 住所
+              td 〒000-0000　熊本県球磨郡上村

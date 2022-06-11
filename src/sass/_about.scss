@@ -1,5 +1,217 @@
-.about_list {
-    font-size: 100px;
-    background: $main-font;
-    font-family: 'Sriracha', cursive;
+// .about_list {
+//     font-size: 100px;
+//     background: $main-font;
+//     font-family: 'Sriracha', cursive;
+// }
+.about_page {
+  .about_wrap {
+    display: flex;
+    width: 100%;
+    .about_h1 {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      h1 {
+        margin-top: 180px;
+        font-size: 30px;
+      }
+    }
+  }
+  .about_image {
+    max-width: 970px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+    
+  .stylist_wrap {
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    max-width: 1080px;
+    column-gap: 70px;
+    .stylist_h2 {
+      width: 334px;
+      h2 {
+        margin-top: 100px;
+        position: relative;
+        font-size: 30px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -15px;/*線の上下位置*/
+          display: inline-block;
+          width: 260px;/*線の長さ*/
+          height: 2px;/*線の太さ*/
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-137px);/*位置調整*/
+          background-color: black;/*線の色*/
+          border-radius: 2px;/*線の丸み*/
+        }
+      }
+    }
+    .stylist_men {
+      width: 334px;
+      .stylist_img {
+        width: 334px;
+      }
+      .stylist_name {
+        margin-top: 20px;
+        .p1 {
+          font-size: 15px;
+          font-weight: bold;
+        }
+        .p2 {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+      }
+      .stylist_comment {
+        margin-top: 25px;
+        font-size: 15px;
+      }
+      .stylist_sns {
+        margin-top: 20px;
+        display: flex;
+        column-gap: 10px;
+        .sns {
+          width: 21px;
+        }
+      }
+    }
+  }
+
+  .stylist_philosophy {
+    background-color: #ebebeb;
+    width: 90%;
+    margin: 100px 0 0 auto;
+    height: 500px;
+    .philosophy_box {
+      margin: 0 auto;
+      display: flex;
+      width: 900px;
+      .philosophy1 {
+        width: 450px;
+        .philosophy_h3 {
+          margin-top: 80px;
+          h3 {
+            font-size: 30px;
+          }
+        } 
+        .philosophy_list {
+          h4 {
+            margin-top: 50px;
+          }
+          ol {
+            li {
+              counter-increment: philosophy;
+              padding-left: 30px;
+              margin-bottom: 3px;
+              font-size: .9rem;
+              position: relative;
+              &::before {
+                content: counter(philosophy,decimal-leading-zero) ".";;
+                position: absolute;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+      .philosophy2 {
+        width: 450px;
+        .philosophy_list {
+          margin-top: 175px;
+          ol {
+            li {
+              counter-increment: philosophy;
+              padding-left: 30px;
+              margin-bottom: 3px;
+              font-size: .9rem;
+              position: relative;
+              &::before {
+                content: counter(philosophy,decimal-leading-zero) ".";;
+                position: absolute;
+                left: 0;
+              }
+            }
+          }
+        }
+        .philosophy_list1 {
+          margin-top: 50px;
+          h5 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .stylist_outline {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #ebebeb;
+    height: 700px;
+    .outline_h2 {
+      padding-top: 70px;
+      text-align: center;
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .outline_box {
+      margin-top: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .salon {
+        width: 550px;
+        .salon_h3 {
+          margin-bottom: 40px;
+          h3 {
+            font-size: 25px;
+          }
+        }
+        .salon_list {
+          th {
+            text-align: left;
+            padding: 10px 40px 10px 0;
+          }
+          td {
+            margin-left: 50px;
+            text-align: left;
+          }
+          .salonlist_1 {
+            text-align: left;
+            padding: 0px 10px 10px 0;
+          }
+        }
+      }
+      .company {
+        width: 550px;
+        .company_h3 {
+          margin-bottom: 40px;
+          h3 {
+            font-size: 25px;
+          }
+        }
+        .company_list {
+          th {
+            text-align: left;
+            padding: 10px 40px 10px 0;
+          }
+          td {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
 }
