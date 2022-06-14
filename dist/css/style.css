@@ -882,6 +882,7 @@ a {
 .about_page .stylist_outline .outline_box .salon .salon_list th {
   text-align: left;
   padding: 10px 40px 10px 0;
+  vertical-align: top;
 }
 .about_page .stylist_outline .outline_box .salon .salon_list td {
   margin-left: 50px;
