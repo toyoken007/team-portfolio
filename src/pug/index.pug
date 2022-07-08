@@ -13,11 +13,13 @@ block append meta
   +inc_meta_facebook(metas)
 block title
   title #{metas.title}
+block link
+  link(rel='stylesheet' href="./css/style.css")
 block body
   main.top
     .josei_warp
       .josei
-          img(src=metas.imgpath + "top_hair.jpg" alt="女性の画像")
+        img(src=metas.imgpath + "top_hair.jpg" alt="女性の画像")
       .top_comment
         h2 TOYO FOR
           br
@@ -47,8 +49,8 @@ block body
             .concept_link
               p: a(href="") View more
         .images.hogehoge
-          img(src=metas.imgpath + "cut_image.jpg", alt="カットイメージ画像")
-    
+          img(src=metas.imgpath + "cut_image.jpg" alt="カットイメージ画像")
+
       .menu_box
         .moji.hogehoge
           .concept_comment
@@ -59,7 +61,7 @@ block body
             .concept_link
               p: a(href="") View more
         .images.hogehoge
-          img(src=metas.imgpath + "hair_room.jpg", alt="カットイメージ画像")
+          img(src=metas.imgpath + "hair_room.jpg" alt="カットイメージ画像")
 
     .gallery_wrap 
       .gallery_title 
@@ -67,23 +69,23 @@ block body
       .gallery_box 
         ul.gallery_images1
           li
-            img(src=metas.imgpath + "man1.jpg", alt="男性1画像")
+            img(src=metas.imgpath + "man1.jpg" alt="男性1画像")
           li
-            img(src=metas.imgpath + "man2.jpg", alt="男性2画像")
+            img(src=metas.imgpath + "man2.jpg" alt="男性2画像")
           li
-            img(src=metas.imgpath + "man3.jpg", alt="男性3画像")
+            img(src=metas.imgpath + "man3.jpg" alt="男性3画像")
           li
-            img(src=metas.imgpath + "man4.jpg", alt="男性4画像")
+            img(src=metas.imgpath + "man4.jpg" alt="男性4画像")
           li
-            img(src=metas.imgpath + "woman1.jpg", alt="女性1画像")
+            img(src=metas.imgpath + "woman1.jpg" alt="女性1画像")
           li
-            img(src=metas.imgpath + "woman2.jpg", alt="女性2画像")
+            img(src=metas.imgpath + "woman2.jpg" alt="女性2画像")
           li
-            img(src=metas.imgpath + "woman3.jpg", alt="女性3画像")
+            img(src=metas.imgpath + "woman3.jpg" alt="女性3画像")
           li
-            img(src=metas.imgpath + "woman4.jpg", alt="女性4画像")
+            img(src=metas.imgpath + "woman4.jpg" alt="女性4画像")
         .gallery_link
-              p: a(href="") View more
+          p: a(href="") View more
 
     .about_wrap
       .about_comment.hogehoge
@@ -105,7 +107,7 @@ block body
 
     .recruit_wrap 
       .recruit_img 
-        img(src=metas.imgpath + "recruit.jpg", alt="散髪風景の画像")
+        img(src=metas.imgpath + "recruit.jpg" alt="散髪風景の画像")
       .recruit_box
         h4 Recruit 
         p.recruit_title 「愛」 「真心」 「美」 「感動」を与える。
@@ -120,25 +122,25 @@ block body
       .blog_list
         .blog_box
           .blog_box1
-            img(src=metas.imgpath + "ikumou.jpg", alt="育毛剤の画像")
+            img(src=metas.imgpath + "ikumou.jpg" alt="育毛剤の画像")
           .blog_box2
             p.blog_days 2020.10.07
             a(href="") アジュバン育毛シリーズ　KASUI
         .blog_box
           .blog_box1
-            img(src=metas.imgpath + "tatemono.jpg", alt="建物の画像")
+            img(src=metas.imgpath + "tatemono.jpg" alt="建物の画像")
           .blog_box2
             p.blog_days 2020.05.07
             p: a(href="") 本日より営業再開しました。
         .blog_box
           .blog_box1
-            img(src=metas.imgpath + "kaikei.jpg", alt="会計の画像")
+            img(src=metas.imgpath + "kaikei.jpg" alt="会計の画像")
           .blog_box2
             p.blog_days 2020.05.06
             p: a(href="") 安心安全お会計
         .blog_box
           .blog_box1
-            img(src=metas.imgpath + "hatake.jpg", alt="畑の画像") 
+            img(src=metas.imgpath + "hatake.jpg" alt="畑の画像") 
           .blog_box2
             p.blog_days 2020.05.05
             p: a(href="") 畑ほぼ完成しました。
