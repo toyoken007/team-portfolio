@@ -1,0 +1,52 @@
+// .btn {
+//     background-color: $main-font;
+// }
+.gallery_page {
+  .gallery_wrap {
+    display: flex;
+    width: 100%;
+
+    .gallery_h1 {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        margin-top: 180px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .gallery_image {
+    max-width: 970px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .gallery_h2 {
+    margin: 160px auto 0;
+    width: 600px;
+  }
+
+  .gallery_wrapwrap {
+    margin-top: 120px;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    .gallery_img {
+      width: 260px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

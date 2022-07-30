@@ -1,0 +1,41 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = '/gallery/'
+  - metas.imgpath = '../images/gallery/'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+block append meta
+  +meta(metas)
+  include ../include/_inc_meta_facebook
+  +inc_meta_facebook(metas)
+block title
+  title Gallery
+block link
+  link(rel='stylesheet' href="../css/style.css")
+block body
+  main.gallery_page
+    .gallery_wrap 
+      .gallery_h1
+        h1 gallery
+      .gallery_image 
+        img(src="https://placehold.jp/964x369.png" alt="ギャラリーのイメージ画像")
+
+    .gallery_wrapwrap 
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
+      .gallery_img
+        img(src="https://placehold.jp/260x260.png" alt="ギャラリーのイメージ画像")
