@@ -1,0 +1,70 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = '/recruit/'
+  - metas.imgpath = '../images/recruit/'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+block append meta
+  +meta(metas)
+  include ../include/_inc_meta_facebook
+  +inc_meta_facebook(metas)
+block title
+  title Recruit
+block link
+  link(rel='stylesheet' href="../css/style.css")
+block body
+  main.recruit_page
+    .recruit_wrap 
+      .recruit_h1
+        h1 Recruit
+      .recruit_image 
+        img(src="https://placehold.jp/964x369.png" alt="ギャラリーのイメージ画像")
+
+    .recruit_wrapwrap 
+      .recruit_comment_box
+        .recruit_h4
+          h4 「愛」「真心」「美」「感動」を与える。
+        .recruit_comment
+          p 当社の経営理念にもあるように、お客様に美と感動を与えるためには「愛」と「真心」が不可欠です。心を込めておもてなしすれば必ずお客様に伝わり、そしてあなたにとって必ず大切なお客様となります。<br>
+          |お客様のためを想う気持ちさえあれば、ここには成長出来る環境が揃っています。共に感動し、共に楽しく働きましょう。
+      .recruit_img 
+        img(src="https://placehold.jp/775x500.png" alt="ギャラリーのイメージ画像")
+
+    .requirements
+      .requirements_wrap
+        .requirements_title 
+          h4 Requirements
+        table 
+          tbody
+            tr 
+              th 募集職種
+              td スタイリスト、アシスタント、2ヶ月間の研修期間あり
+            tr 
+              th 勤務地
+              td 
+                p 熊本県球磨郡あさぎり町0-0-0 2F
+                p 熊本県人吉市0-0
+            tr 
+              th 勤務時間
+              td 9:00～20:00
+            tr 
+              th 給料
+              td 
+                p スタイリスト¥210,000~+歩合
+                p アシスタント¥165,000〜(試用期間あり期間中は¥160,000)
+            tr 
+              th 資格
+              td 美容師免許（資格取得予定者）
+            tr 
+              th 業務内容
+              td スタイリストの補助業務や店舗を円滑に運営するための多様な業務
+            tr 
+              th 待遇
+              td 
+                p 社会保険、厚生年金、交通費支給、賞与、昇給
+                p パート可。
+
+        .requirements_link
+              p: a(href="") View more

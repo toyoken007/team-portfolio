@@ -963,6 +963,146 @@ a {
   width: 100%;
 }
 
+.recruit_page .recruit_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.recruit_page .recruit_wrap .recruit_h1 {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.recruit_page .recruit_wrap .recruit_h1 h1 {
+  margin-top: 180px;
+  font-size: 30px;
+}
+.recruit_page .recruit_image {
+  max-width: 970px;
+  width: 100%;
+}
+.recruit_page .recruit_image img {
+  width: 100%;
+}
+.recruit_page .gallery_h2 {
+  margin: 160px auto 0;
+  width: 600px;
+}
+.recruit_page .recruit_wrapwrap {
+  height: 500px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.recruit_page .recruit_wrapwrap .recruit_comment_box {
+  z-index: 1;
+  width: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.recruit_page .recruit_wrapwrap .recruit_comment_box .recruit_h4 h4 {
+  font-size: 18px;
+}
+.recruit_page .recruit_wrapwrap .recruit_comment_box .recruit_comment {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.recruit_page .recruit_wrapwrap .recruit_img {
+  position: absolute;
+  right: 0;
+  width: 775px;
+}
+.recruit_page .requirements {
+  margin-top: 100px;
+  width: 100%;
+  height: 750px;
+  background-color: #363636;
+}
+.recruit_page .requirements .requirements_wrap {
+  width: 600px;
+  margin: 0 auto;
+}
+.recruit_page .requirements .requirements_wrap .requirements_title {
+  padding: 80px 0;
+  text-align: center;
+}
+.recruit_page .requirements .requirements_wrap .requirements_title h4 {
+  color: white;
+  font-size: 27px;
+}
+.recruit_page .requirements .requirements_wrap table tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  color: white;
+}
+.recruit_page .requirements .requirements_wrap table tbody tr th {
+  width: 178px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+}
+.recruit_page .requirements .requirements_wrap table tbody tr td {
+  text-align: left;
+  font-size: 14px;
+}
+.recruit_page .requirements .requirements_wrap .requirements_link {
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  border: 1px solid;
+  border-color: aliceblue;
+  background-color: #363636;
+  padding: 10px;
+}
+.recruit_page .requirements .requirements_wrap .requirements_link p {
+  font-size: 15px;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+}
+.recruit_page .requirements .requirements_wrap .requirements_link p a {
+  color: aliceblue;
+  width: 100%;
+  text-decoration: none;
+}
+.recruit_page .requirements .requirements_wrap .requirements_link p a::after {
+  color: aliceblue;
+  content: ">";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 45px;
+}
+
 #reserve_body {
   line-height: 1;
 }
