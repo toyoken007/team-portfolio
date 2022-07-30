@@ -1,0 +1,35 @@
+extends ../include/_layout
+block var
+  - metas = {}
+  - metas.title = 'title'
+  - metas.url = '/contact/'
+  - metas.imgpath = '../images/contact/'
+  - metas.site_name = 'site_name'
+  - metas.description = 'description'
+block append meta
+  +meta(metas)
+  include ../include/_inc_meta_facebook
+  +inc_meta_facebook(metas)
+block title
+  title Contact
+block link
+  link(rel='stylesheet' href="../css/style.css")
+block body
+  main.contact_page
+    .contact_wrap 
+      .contact_h1
+        h1 Contact
+      .contact_image 
+        img(src="https://placehold.jp/964x369.png" alt="ギャラリーのイメージ画像")
+    
+    .contact_wrapwrap
+      .contact_comment
+        p ご予約は全てお電話もしくはホットペッパーより承っております。<br>
+        |お気軽にご連絡くだささいませ。
+      .contact_link
+        p: a(href="") Reserve
+      .concept_guidance
+        p TEL：096-○○○-××××
+        p 営業時間：09:30～20:30
+
+    

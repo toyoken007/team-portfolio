@@ -1,0 +1,59 @@
+// .btn {
+//     background-color: $main-font;
+// }
+.contact_page {
+  .contact_wrap {
+    display: flex;
+    width: 100%;
+
+    .contact_h1 {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        margin-top: 180px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .contact_wrapwrap {
+    width: 500px;
+    margin: 100px auto 80px;
+    .contact_comment {
+      text-align: center;
+    }
+    .contact_link {
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      width: 120px;
+      border: 1px solid ;
+      // border-color: aliceblue;
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      p {
+        font-size: 15px;
+        position: relative;
+        transition: all 1s;
+        width: 100%;
+        a {
+          color: rgb(15, 15, 15);
+          width: 100%;
+          text-decoration: none;
+          &::after {
+            content: ">";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 45px;
+          }
+        }
+      }
+    }
+    .concept_guidance {
+      text-align: center;
+    }
+  }
+}
